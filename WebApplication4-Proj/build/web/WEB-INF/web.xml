@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Chckusr</servlet-name>
+        <servlet-class>proj.Chckusr</servlet-class>
+        <init-param>
+            <description>admin id</description>
+            <param-name>adminid</param-name>
+            <param-value>s123</param-value>
+        </init-param>
+        <init-param>
+            <description>password</description>
+            <param-name>adminpass</param-name>
+            <param-value>priya12</param-value>
+        </init-param>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chckusr</servlet-name>
+        <url-pattern>/Chckusr</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
